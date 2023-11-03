@@ -1,0 +1,14 @@
+export Dassie.Generators
+
+module seqtools = {
+	
+	add (length: int, n: int): AddSeq = AddSeq length, n
+	
+	sub (length: int, n: int): AddSeq = AddSeq length, ~n + 1
+	
+	mul (length: int, n: int): MulSeq = MulSeq length, n
+	
+	unwrap (s: MulSeq): int@[] = seq @ i :> s = i
+	
+	unwrap (s: AddSeq): int@[] = seq @ i :> s = i
+}

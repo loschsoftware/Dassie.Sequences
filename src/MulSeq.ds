@@ -1,0 +1,13 @@
+export Dassie.Generators
+
+type MulSeq = {
+	
+	Length: int
+	local _n: int
+	
+	MulSeq (length: int, n: int) = {
+		ignore (Length = length, _n = n)
+	}
+	
+	get_Item (i: int): int = _n * i
+}
