@@ -1,0 +1,13 @@
+export Dassie.Generators
+
+type ConstSeq = {
+	
+	Length: int
+	local _value: object
+	
+	ConstSeq (length: int, value: object) = {
+		ignore (Length = length, _value = value)
+	}
+	
+	get_Item (i: int): object = _value
+}

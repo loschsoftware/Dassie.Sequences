@@ -8,7 +8,11 @@ module seqtools = {
 	
 	mul (length: int, n: int): MulSeq = MulSeq length, n
 	
+	const (length: int, value: object): ConstSeq = ConstSeq length, value
+	
 	unwrap (s: MulSeq): int@[] = seq @ i :> s = i
 	
 	unwrap (s: AddSeq): int@[] = seq @ i :> s = i
+	
+	unwrap (s: ConstSeq): int@[] = seq @ i :> s = i
 }
