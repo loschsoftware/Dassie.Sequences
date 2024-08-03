@@ -2,4 +2,14 @@
 <DassieConfig FormatVersion="1.0">
   <ApplicationType>Library</ApplicationType>
   <AssemblyFileName>Dassie.Generators</AssemblyFileName>
+  <BuildDirectory>.\build</BuildDirectory>
+  
+  <VersionInfo>
+	<Description>Dassie Generators Library</Description>
+	<Company>Losch</Company>
+	<Copyright>(C) $(Year) Losch</Copyright>
+	<Product>Dassie</Product>
+	<Version>1.0</Version>
+	<FileVersion>1.0</FileVersion>
+  </VersionInfo>
 </DassieConfig>
