@@ -1,9 +1,9 @@
-# Dassie.Generators
-A library adding some basic generator types to Dassie.
+# Dassie.Sequences
+A library adding tools for generating and working with number sequences.
 
 Usage:
 ````dassie
-import Dassie.Generators
+import Dassie.Sequences
 
 l = rdint "Length: "
 n = rdint "Factor: "

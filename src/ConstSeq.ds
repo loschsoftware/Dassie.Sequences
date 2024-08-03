@@ -1,4 +1,4 @@
-export Dassie.Generators
+export Dassie.Sequences
 
 type ConstSeq = {
 	
