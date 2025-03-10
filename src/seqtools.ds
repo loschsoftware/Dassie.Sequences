@@ -1,0 +1,12 @@
+export Dassie.Sequences
+
+module seqtools = {
+	add (length: int, n: int) = AddSeq length, n
+	sub (length: int, n: int) = AddSeq length, ~n + 1
+	mul (length: int, n: int) = MulSeq length, n
+	const (length: int, value: object) = ConstSeq length, value
+    
+	unwrap (s: MulSeq) = @ i :> (s) = i
+	unwrap (s: AddSeq) = @ i :> (s) = i
+	unwrap (s: ConstSeq) = @ i :> (s) = i
+}

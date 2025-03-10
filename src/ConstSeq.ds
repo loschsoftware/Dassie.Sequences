@@ -1,13 +1,5 @@
 export Dassie.Sequences
 
-type ConstSeq = {
-	
-	Length: int
-	local _value: object
-	
-	ConstSeq (length: int, value: object) = {
-		ignore (Length = length, _value = value)
-	}
-	
-	get_Item (i: int): object = _value
+type ConstSeq (Length: int, Value: object) = {
+	get_Item (i: int) = Value
 }
